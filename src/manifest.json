@@ -1,0 +1,18 @@
+﻿{
+  "name": "谷百快搜",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+      "default_title": "谷百快搜",      
+      "default_icon": "icon.png",
+      "popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.baidu.com/*"],
+      "js": ["jquery-1.4.4.min.js", "app.js"]
+    }
+  ]
+}
